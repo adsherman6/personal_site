@@ -1,31 +1,168 @@
-<html xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Adam Sherman | IT Specialist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Sherman | IT Specialist</title>
+    <style>
+        /* Basic Reset and Body Styling */
+        body {
+            font-family: 'Verdana', 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Container for the content */
+        .container {
+            max-width: 800px; /* Adjusted back to a slightly narrower width */
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Title Header Styling */
+        .header-title {
+            margin-bottom: 30px;
+        }
+
+        .header-title h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .header-title p {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+
+        /* Navigation/Links Styling */
+        .nav-links {
+            margin: 20px 0 40px 0;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            padding: 5px 15px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Resume Image Placeholder Styling */
+        .resume-image-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none; /* Remove underline from link */
+            position: relative; /* For the overlay text */
+        }
+
+        .resume-image {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .resume-image:hover {
+            opacity: 0.8; /* Dim the image on hover */
+            transform: scale(1.01); /* Slight lift effect */
+        }
+
+        /* Optional: Text overlay on the image */
+        .resume-image-link::after {
+            content: "Click to Download Resume (PDF)";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            opacity: 0; /* Hidden by default */
+            transition: opacity 0.3s ease;
+        }
+
+        .resume-image-link:hover::after {
+            opacity: 1; /* Show on hover */
+        }
+        
+        /* QR Code Section */
+        .qr-section {
+            padding: 20px;
+            border-top: 1px solid #eee;
+            margin-top: 50px; /* More separation from the resume section */
+        }
+
+        .qr-section h3 {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .qr-section img {
+            width: 175px;
+            height: 175px;
+            border: 5px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+    </style>
 </head>
+<body>
 
-<body bgcolor="#ACB9CA">
+    <div class="container">
+        
+        <header class="header-title">
+            <h1>Adam Sherman</h1>
+            <p>IT Support Specialist | Experienced in Infrastructure and Cloud Services</p>
+        </header>
 
-<p align=center style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:0in;mso-add-space:auto;text-align:center'><span style='font-size:
-14.0pt;font-family:"Verdana";mso-no-proof:yes'><img width=639 height=134
-src="docs/image1.png" alt="Adam Sherman - IT Support Specialist"></span></p>
+        <nav class="nav-links">
+            <a href="docs/resume.pdf" download="Adam_Sherman_Resume.pdf">Download Resume</a> 
+            <a href="https://twitter.com/adismad6" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/in/adsherman6/" target="_blank">LinkedIn</a>
+            <a href="mailto:adsherman6@outlook.com">Email Me</a>
+        </nav>
 
-<p align=center style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:0in;mso-add-space:auto;text-align:center'><span style='font-size:
-16.0pt;font-family:"Verdana",sans-serif'><b><a
-href="../docs/resume.pdf">Resume</a></b> | <a href="https://twitter.com/adismad6">Twitter</a>
-| <a href="https://www.linkedin.com/in/adsherman6/">LinkedIn</a> | <b><a href="mailto:adsherman6@outlook.com">Email</a></b></span></p>
+        <section class="resume-preview-section">
+            <h3>My Professional Summary</h3>
+            <a href="docs/resume.pdf" download="Adam_Sherman_Resume.pdf" class="resume-image-link" title="Click to Download Resume">
+                <img src="docs/resume_preview.png" alt="Preview of Adam Sherman's Resume" class="resume-image">
+            </a>
+        </section>
 
-<br>
-<p align=center style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
-margin-left:0in;mso-add-space:auto;text-align:center'><span style='font-size:
-14.0pt;font-family:"Verdana";mso-no-proof:yes'><img border=0 width=175
-height=175 src="docs/qr.png"></span></p>
+        <section class="qr-section">
+            <h3>Scan for Quick Contact Info</h3>
+            <img src="docs/qr.png" alt="QR Code for Contact Information">
+        </section>
 
-</div>
+    </div>
 
 </body>
-
 </html>
